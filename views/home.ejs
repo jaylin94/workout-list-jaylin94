@@ -1,0 +1,33 @@
+<% include partials/header %>
+
+<h1>Workout Log</h1>
+<section>
+  <form>
+    <input id="newName" type="text" placeholder="name" name="name" required />
+    <input id="newReps" type="number" placeholder="reps" name="reps" />
+    <input id="newWeight" type="number" placeholder="weight" name="weight" />
+    <input id="newDate" type="date" name="date" />
+    <select id="newLbs">
+      <option value="1" name="lbs">Pounds</option>
+      <option value="0" name="lbs">Kilograms</option>
+    </select>
+    <input id="newEntryBtn" type="submit" />
+  </form>
+</section>
+<section>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Reps</th>
+        <th>Weight</th>
+        <th>Date</th>
+        <th>Units</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</section>
+
+<% include partials/footer %>
