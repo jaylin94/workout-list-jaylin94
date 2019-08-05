@@ -126,4 +126,4 @@ app.use(function(err, req, res, next){
   res.send('500 - Server Error');
 });
 
-app.listen(app.get("port"), process.env.IP);
+app.listen(process.env.PORT, process.env.IP);
